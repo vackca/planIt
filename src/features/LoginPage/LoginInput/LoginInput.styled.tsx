@@ -6,6 +6,7 @@ export const StyledLabel = styled('label')(() => ({
     marginBottom: '0.3rem',
     color: 'rgba(217,223,220,1)',
     userSelect: 'none',
+    fontFamily: "'Brush Script MT', cursive",
 }))
 
 export const StyledInputDiv = styled('div')(() => ({
@@ -24,7 +25,4 @@ export const StyledTextField = styled(TextField)(() => ({
         fontFamily: 'Roboto, "Helvetica", "Arial", sans-serif !important',
         fontSize: '16px !important',
     },
-    '& .Mui-focused': {
-        borderColor: 'green',
-    }
 }))

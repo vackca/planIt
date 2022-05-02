@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import PlannerHeader from "../PlannerHeader/PlannerHeader";
 import PlannerBody from "../PlannerBody/PlannerBody";
 import {useNavigate} from "react-router-dom";
+import {StyledMainPage} from "./MainPage.styled";
 
 const MainPage = () => {
     const navigate = useNavigate();
@@ -11,10 +12,10 @@ const MainPage = () => {
     }, [])
 
     return (
-        <>
+        <StyledMainPage>
             <PlannerHeader />
             <PlannerBody/>
-        </>
+        </StyledMainPage>
     );
 }
 
