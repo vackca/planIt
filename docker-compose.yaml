@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  plan-it:
+    container_name: plan-it
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/plan-it'
+      - './plan-it/node_modules'
+    ports:
+      - "3001:3000"
