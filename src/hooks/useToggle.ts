@@ -1,19 +1,21 @@
-import {useState} from "react";
+import { useState } from 'react';
 
-export const useToggle = (initialState?: boolean): [boolean, VoidFunction, VoidFunction,VoidFunction] => {
-    const [state, setState] = useState<boolean>(!!initialState);
+export const useToggle = (
+  initialState?: boolean
+): [boolean, VoidFunction, VoidFunction, VoidFunction] => {
+  const [state, setState] = useState<boolean>(!!initialState);
 
-    const open = () => {
-        setState(true);
-    }
+  const open = () => {
+    setState(true);
+  };
 
-    const close = () => {
-        setState(false);
-    }
+  const close = () => {
+    setState(false);
+  };
 
-    const toggle = () => {
-        setState((state) => !state);
-    }
+  const toggle = () => {
+    setState((state) => !state);
+  };
 
-    return [state, toggle, open, close]
-}
+  return [state, toggle, open, close];
+};
